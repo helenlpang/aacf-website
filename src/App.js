@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 import { 
@@ -8,7 +8,10 @@ import {
     Marker,
     InfoWindow
   } from "react-google-maps";
-  
+
+import * as parksData from "./data/skateparks.json"
+import mapStyles from "./mapStyles";
+
   function Map() {
     const [selectedChurch, setSelectedChurch] = useState(null);
   
@@ -27,7 +30,7 @@ import {
               setSelectedChurch(church);
             }}
             icon={{
-              url: '/hotdog.png',
+              url: '/church.png',
               scaledSize: new window.google.maps.Size(25,25) 
             }}
           />
@@ -57,7 +60,7 @@ import {
   
   export default function App() {
     return (
-      <div style = {{ width: "100vw", height: "100vh"}}>
+      <div style = {{ width: "80vw", height: "80vh"}}>
         <WrappedMap 
           googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyASigF8g5y-u4pWOqF41qMmiF2gWBQCUVw
          
@@ -71,12 +74,3 @@ import {
     );
   }
   
-// class App extends React.Component {
-//     render() {
-//         return (
-//             <h1>HI!!!!</h1>
-//         )
-//     }
-// }
-
-// export default App;
