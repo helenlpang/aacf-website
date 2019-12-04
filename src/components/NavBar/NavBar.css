@@ -1,0 +1,37 @@
+.outer-container {
+    position: fixed;
+    width: 100vw;
+}
+
+.nav-body {
+    background-color: #282c34;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-body img {
+    border-radius: 50px;
+}
+
+.nav-body li {
+    list-style: none;
+}
+
+.nav-body a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.35rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-body a:hover {
+    background-color: #ffffff;
+    color: #282c34;
+    cursor: pointer;
+}
