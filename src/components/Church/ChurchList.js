@@ -1,5 +1,8 @@
 import React from 'react';
+import './ChurchList.css';
 import Church from './Church';
+
+import Map from '../Map/Map';
 
 let churches = [{
     id: 1,
@@ -38,7 +41,8 @@ class ChurchList extends React.Component {
         }
     );
     return (
-      <div>
+      <div className="church-list">
+        <h1>Search for nearby churches!</h1>
         <input type='text' 
           value={this.state.search}
           onChange={this.updateSearch.bind(this)}>
@@ -48,6 +52,7 @@ class ChurchList extends React.Component {
                 return <Church church={church} key={church.id}/>
             })}
        </ul>
+       <Map />
       </div>
     );
   }
