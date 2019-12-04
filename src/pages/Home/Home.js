@@ -1,13 +1,19 @@
 import React from 'react';
 
+import './Home.css';
+import Image from './background-image.jpg';
+
 class Home extends React.Component {
     render() {
         return(
-            <div>
-                <p>
+            <div className="home">
+                <div className="image">
+                    <img src={Image} alt="AACF" />
+                </div>
+                <h1>
                     Welcome to the website for the Harvard-Radcliffe 
                     Asian-American Christian Fellowship (AACF)!
-                </p>
+                </h1>
                 <p>
                     The mission of AACF is to know God and make God known. 
                     Our desire is to be a voice of faith among the Asian 

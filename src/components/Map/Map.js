@@ -16,7 +16,7 @@ function Map() {
   
     return (
       <GoogleMap
-        defaultZoom={15}
+        defaultZoom={14}
         defaultCenter={{ lat: 42.3736, lng: -71.1097 }}
         defaultOptions={{styles: mapStyles}}
       >
@@ -60,7 +60,7 @@ function Map() {
   class FinalMap extends React.Component {
     render() {
       return (
-        <div style = {{ width: "40vw", height: "40vh"}}>
+        <div style = {{ width: "30vw", height: "50vh", }}>
           <WrappedMap 
             googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyASigF8g5y-u4pWOqF41qMmiF2gWBQCUVw`}
             loadingElement={<div style={{ height: "100%" }} /> }

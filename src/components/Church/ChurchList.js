@@ -47,12 +47,14 @@ class ChurchList extends React.Component {
           value={this.state.search}
           onChange={this.updateSearch.bind(this)}>
         </input>
-       <ul>
+        <div className="church-info">
+          <ul>
             {filteredChurches.map((church)=>{
                 return <Church church={church} key={church.id}/>
             })}
-       </ul>
-       <Map />
+          </ul>
+          <Map />
+        </div>
       </div>
     );
   }
