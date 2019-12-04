@@ -16,8 +16,8 @@ function Map() {
   
     return (
       <GoogleMap
-        defaultZoom={10}
-        defaultCenter={{ lat: 45.421532, lng: -75.697189 }}
+        defaultZoom={15}
+        defaultCenter={{ lat: 42.3736, lng: -71.1097 }}
         defaultOptions={{styles: mapStyles}}
       >
         {parksData.features.map(church => (
