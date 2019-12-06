@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import NavBar from './components/NavBar/NavBar';
+import ScrollToTop from './helpers/ScrollToTop';
 
 import Home from './pages/Home/Home';
-import Church from './components/Church/Church';
 import ChurchList from './components/Church/ChurchList';
+import Members from './pages/Members/Members';
 
 class App extends React.Component {
   render() {
@@ -15,8 +16,11 @@ class App extends React.Component {
         <NavBar />
         <div className="App-header">
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/churches" component={ChurchList} />
+            <ScrollToTop>
+              <Route path="/" exact component={Home} />
+              <Route path="/churches" component={ChurchList} />
+              <Route path="/members" component={Members} />
+            </ScrollToTop>
           </Switch>
         </div>
       </Router>

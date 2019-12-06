@@ -1,5 +1,12 @@
-.home {
-    padding: 0;
+.home-outer-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-inner-container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 80vh;
 }
 
 .image {

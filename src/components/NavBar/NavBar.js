@@ -19,6 +19,11 @@ class NavBar extends React.Component {
                                    Churches
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink to="/members">
+                                   Members
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
