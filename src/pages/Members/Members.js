@@ -2,7 +2,6 @@ import React from 'react';
 
 import './Members.css';
 import Member from './Member';
-import AddMember from './AddMember';
 
 class Members extends React.Component {
     state = {
@@ -54,7 +53,6 @@ class Members extends React.Component {
                                 })}
                             </tbody>
                         </table>
-                        <AddMember />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 import { 
     GoogleMap, 
     withScriptjs, 
@@ -11,6 +12,8 @@ import {
 import * as parksData from "../../data/skateparks.json"
 import mapStyles from "../../mapStyles";
 
+
+import {churches} from '../Church/ChurchList';
 function Map() {
     const [selectedChurch, setSelectedChurch] = useState(null);
   
@@ -20,10 +23,11 @@ function Map() {
         defaultCenter={{ lat: 42.3736, lng: -71.1097 }}
         defaultOptions={{styles: mapStyles}}
       >
-        {parksData.features.map(church => (
-          <Marker key = {church.properties.PARK_ID} position={{ 
-            lat: church.geometry.coordinates[1],
-            lng: church.geometry.coordinates[0], 
+      
+      {/* {churches.map(church => (
+          <Marker key = {church.id} position={{ 
+            lat: church.lat,
+            lng: church.lng,
             }} 
             onClick={() => {
               setSelectedChurch(church);
@@ -33,28 +37,65 @@ function Map() {
               scaledSize: new window.google.maps.Size(25,25) 
             }}
           />
-        ))}
+        ))} */}
+
+
+       {parksData.features.map(church => (
+          <Marker key = {church.properties.PARK_ID} position={{ 
+            lat: church.geometry.coordinates[1],
+            lng: church.geometry.coordinates[0],
+            }} 
+            onClick={() => {
+              setSelectedChurch(church);
+            }}
+            icon={{
+              url: '/church.png',
+              scaledSize: new window.google.maps.Size(25,25) 
+            }}
+          />
+        ))}  
   
-        {selectedChurch && (
+        {/* {selectedChurch && (
           <InfoWindow
             position={{ 
-              lat: selectedChurch.geometry.coordinates[1],
-              lng: selectedChurch.geometry.coordinates[0], 
+              lat: selectedChurch.lat,
+              lng: selectedChurch.lng, 
             }} 
             onCloseClick={() => {
               setSelectedChurch(null);
             }}
           >
             <div>
-              <h2>{selectedChurch.properties.NAME}</h2>
-              <p>{selectedChurch.properties.DESCRIPTIO}</p>
+              <h2>{selectedChurch.name}</h2>
+              <p>{selectedChurch.address}</p>
             </div>
           </InfoWindow>
         )}
       </GoogleMap>
     );
-  }
+  }  */}
   
+       {selectedChurch && (
+          <InfoWindow
+             position={{ 
+              lat: selectedChurch.geometry.coordinates[1],
+              lng: selectedChurch.geometry.coordinates[0], 
+            }} 
+             onCloseClick={() => {
+            setSelectedChurch(null);
+           }}
+         >
+            <div>
+             <h2>{selectedChurch.properties.NAME}</h2>
+             <p>{selectedChurch.properties.DESCRIPTIO}</p>
+            </div>
+          </InfoWindow>
+       )}
+      </GoogleMap>
+   );
+ }
+  
+
   const WrappedMap = withScriptjs(withGoogleMap(Map));
 
   class FinalMap extends React.Component {
