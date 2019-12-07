@@ -7,4 +7,13 @@
 .church-profile td {
     border: 1px solid #ffffff;
     padding: 8px;
+<<<<<<< HEAD
+=======
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+>>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
 }
