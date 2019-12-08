@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
 import { 
     GoogleMap, 
     withScriptjs, 
@@ -15,11 +11,8 @@ import {
 import * as parksData from "../../data/skateparks.json"
 import mapStyles from "../../mapStyles";
 
-<<<<<<< HEAD
-=======
 
 import {churches} from '../Church/ChurchList';
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
 function Map() {
     const [selectedChurch, setSelectedChurch] = useState(null);
   
@@ -29,12 +22,6 @@ function Map() {
         defaultCenter={{ lat: 42.3736, lng: -71.1097 }}
         defaultOptions={{styles: mapStyles}}
       >
-<<<<<<< HEAD
-        {parksData.features.map(church => (
-          <Marker key = {church.properties.PARK_ID} position={{ 
-            lat: church.geometry.coordinates[1],
-            lng: church.geometry.coordinates[0], 
-=======
       
       {/* {churches.map(church => (
           <Marker key = {church.id} position={{ 
@@ -56,7 +43,6 @@ function Map() {
           <Marker key = {church.properties.PARK_ID} position={{ 
             lat: church.geometry.coordinates[1],
             lng: church.geometry.coordinates[0],
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
             }} 
             onClick={() => {
               setSelectedChurch(church);
@@ -66,15 +52,6 @@ function Map() {
               scaledSize: new window.google.maps.Size(25,25) 
             }}
           />
-<<<<<<< HEAD
-        ))}
-  
-        {selectedChurch && (
-          <InfoWindow
-            position={{ 
-              lat: selectedChurch.geometry.coordinates[1],
-              lng: selectedChurch.geometry.coordinates[0], 
-=======
         ))}  
   
         {/* {selectedChurch && (
@@ -82,29 +59,19 @@ function Map() {
             position={{ 
               lat: selectedChurch.lat,
               lng: selectedChurch.lng, 
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
             }} 
             onCloseClick={() => {
               setSelectedChurch(null);
             }}
           >
             <div>
-<<<<<<< HEAD
-              <h2>{selectedChurch.properties.NAME}</h2>
-              <p>{selectedChurch.properties.DESCRIPTIO}</p>
-=======
               <h2>{selectedChurch.name}</h2>
               <p>{selectedChurch.address}</p>
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
             </div>
           </InfoWindow>
         )}
       </GoogleMap>
     );
-<<<<<<< HEAD
-  }
-  
-=======
   }  */}
   
        {selectedChurch && (
@@ -128,7 +95,6 @@ function Map() {
  }
   
 
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
   const WrappedMap = withScriptjs(withGoogleMap(Map));
 
   class FinalMap extends React.Component {

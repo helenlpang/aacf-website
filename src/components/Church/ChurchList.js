@@ -1,31 +1,12 @@
 import React from 'react';
 import './ChurchList.css';
 import Church from './Church';
-
 import Map from '../Map/Map';
 
 let churches = [{
-<<<<<<< HEAD
-    id: 1,
-    name: 'Citylife',
-    denomination: 'Presbyterian'
-  }, {
-    id: 2,
-    name: 'Aletheia',
-    denomination: 'Non-Denominational'
-  }, {
-    id: 3,
-    name: 'Symphony',
-    denomination: 'Non-Denominational'
-  }, {
-    id: 4,
-    name: 'St. Paul',
-    denomination: 'Catholic'
-  }]
-=======
   id: 1,
   name: 'Citylife',
-  url:<a href="http://www.citylifeboston.org/">Citylife</a>, 
+  url:<a href="/citylife">Citylife</a>, 
   denomination: 'Presbyterian',
   address: '10 Milk St #230, Boston, MA 02108'
 }, {
@@ -90,7 +71,6 @@ let churches = [{
   address: '1555 Massachusetts Ave, Cambridge, MA 02138'
 }]
 
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
 
 class ChurchList extends React.Component {
   constructor() {
