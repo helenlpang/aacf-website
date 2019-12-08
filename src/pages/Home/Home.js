@@ -2,6 +2,10 @@ import React from 'react';
 
 import './Home.css';
 import Image from './background-image.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Button from 'react-bootstrap/Button';
+
 
 class Home extends React.Component {
     render() {
@@ -32,6 +36,9 @@ class Home extends React.Component {
                             Groups! We also hold frequent community events, as well as 
                             retreats throughout the year.
                         </p>
+
+                        
+
                     </div>
                 </div>
             </div>

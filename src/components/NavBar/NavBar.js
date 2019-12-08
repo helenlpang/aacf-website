@@ -26,11 +26,7 @@ class NavBar extends React.Component {
                             </li>
                             <li>
                                 <NavLink to="/addmembers">
-<<<<<<< HEAD
-                                   Join
-=======
                                     Join AACF!
->>>>>>> bae05448596d5f9d53541a98600c72e8293181f3
                                 </NavLink>
                             </li>
                         </ul>
