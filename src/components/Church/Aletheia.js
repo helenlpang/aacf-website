@@ -75,8 +75,8 @@ class Aletheia extends React.Component {
                             <tbody>
                             
                                 {this.state.members.map(member => {
-                                    if(member.church == "Aletheia")
-                                        return <Member member={member} />
+                                    if(member.church === "Aletheia")
+                                        return <Member member={member} key={member.email} />
                                 })}
                             </tbody>
                         </table>

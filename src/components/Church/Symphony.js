@@ -53,8 +53,8 @@ class Symphony extends React.Component {
                             <tbody>
                             
                                 {this.state.members.map(member => {
-                                    if(member.church == "Symphony")
-                                        return <Member member={member} />
+                                    if(member.church === "Symphony")
+                                        return <Member member={member} key={member.email}/>
                                 })}
                             </tbody>
                         </table>

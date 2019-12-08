@@ -1,3 +1,22 @@
-.church-head {
-    text-align: left;
-};
+.churches-outer-container {
+    width: 100vw;
+    height: 320vh;
+}
+
+.churches-inner-container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 80vh;
+}
+
+.churches-body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.churches-body h1 {
+    margin-top: 3rem
+
+}
