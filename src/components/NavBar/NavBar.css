@@ -4,7 +4,7 @@
 }
 
 .nav-body {
-    background-color: #282c34;
+    background-color: 'black';
     color: #ffffff;
     display: flex;
     justify-content: space-between;
