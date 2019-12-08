@@ -9,6 +9,7 @@ class Church extends React.Component {
 				<td>{this.props.church.url}</td>
 				<td>{this.props.church.denomination}</td>
 				<td>{this.props.church.address}</td>
+				<td>{this.props.church.times}</td>
 			</tr>
 		)
 	}

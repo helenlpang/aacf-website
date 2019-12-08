@@ -29,11 +29,6 @@ class NavBar extends React.Component {
                                     Join AACF!
                                 </NavLink>
                             </li>
-                            <li>
-                                <NavLink to="/citylife">
-                                    Citylife
-                                </NavLink>
-                            </li>
                         </ul>
                     </div>
                 </div>

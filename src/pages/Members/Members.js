@@ -45,7 +45,7 @@ class Members extends React.Component {
             <div className="members-outer-container">
                 <div className="members-inner-container">
                     <div className="members-body">
-                        <h1>Members </h1>
+                        <h1>AACF Members </h1>
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {

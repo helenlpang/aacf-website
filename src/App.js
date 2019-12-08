@@ -8,8 +8,9 @@ import ScrollToTop from './helpers/ScrollToTop';
 import Home from './pages/Home/Home';
 import ChurchList from './components/Church/ChurchList';
 import Members from './pages/Members/Members';
-import AddMember from './pages/Members/AddMember';
+import AddMembers from './pages/Members/AddMember';
 import Citylife from './components/Church/citylife';
+import Aletheia from './components/Church/aletheia';
 
 class App extends React.Component {
   render() {
@@ -22,8 +23,9 @@ class App extends React.Component {
               <Route path="/" exact component={Home} />
               <Route path="/churches" component={ChurchList} />
               <Route path="/members" component={Members} />
-              <Route path="/addmembers" component={AddMember}/>
+              <Route path="/addmembers" component={AddMembers} />
               <Route path="/citylife" component={Citylife}/>
+              <Route path="/aletheia" component={Aletheia}/>
             </ScrollToTop>
           </Switch>
         </div>
