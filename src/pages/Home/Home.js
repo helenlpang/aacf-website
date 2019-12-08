@@ -14,10 +14,11 @@ class Home extends React.Component {
                 <div className="home-inner-container">
                     <div className='text'>
                     <text style = {{color: 'black'}}> 
-                    Welcome to ChurchFinder </text>
+                    Welcome to AACF </text>
                     <Link to="/addmembers"> 
                      <Button variant="light" size="lg" block> Interested? Click here to join AACF!</Button> 
-                     </Link>        
+                     </Link>      
+                     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"></link>
                 </div>
                 </div>
                 </div>
