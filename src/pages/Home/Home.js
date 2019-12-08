@@ -14,7 +14,7 @@ class Home extends React.Component {
                 <div className="home-inner-container">
                     <div className='text'>
                     <text style = {{color: 'black'}}> 
-                    Welcome to Website </text>
+                    Welcome to ChurchFinder </text>
                     <Link to="/addmembers"> 
                      <Button variant="light" size="lg" block> Interested? Click here to join AACF!</Button> 
                      </Link>        
