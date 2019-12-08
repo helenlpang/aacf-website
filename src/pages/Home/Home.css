@@ -13,10 +13,10 @@
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    font-size: 440%;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 400%;
+    font-family: "Bookman", serif;
 }
