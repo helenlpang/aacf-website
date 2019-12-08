@@ -9,19 +9,20 @@ import { Link } from 'react-router-dom'
 class Home extends React.Component {
     render() {
         return(
-         <div className="image">
+         <div className="background">
             <div className="home-outer-container">
                 <div className="home-inner-container">
                     <div className='text'>
-                    <text style = {{color: 'black'}}> 
-                    Welcome to Website </text>
-                    <Link to="/addmembers"> 
-                     <Button variant="light" size="lg" block> Interested? Click here to join AACF!</Button> 
-                     </Link>        
-                </div>
-                </div>
+                        <text style = {{color: 'white'}}> 
+                            Welcome to AACF
+                        </text>
+                        <Link to="/addmembers"> 
+                            <Button variant="light" size="lg" block> Interested? Click here to join!</Button> 
+                        </Link>        
+                    </div>
                 </div>
             </div>
+        </div>
         )
     }
 }

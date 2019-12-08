@@ -18,10 +18,19 @@
     text-align: start;
 }
 
+.heading {
+    color: black;
+    text-align: center; 
+}
+
 .form-item {
     margin-left: 10vw;
     margin-right: 10vw;
     display: flex;
     flex-direction: column;
     text-align: start;
+}
+.submit-button {
+    padding-top: 30px;
+    text-align: center;
 }
