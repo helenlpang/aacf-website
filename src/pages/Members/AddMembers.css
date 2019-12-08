@@ -1,0 +1,27 @@
+
+.AddMembers-outer-container {
+    width: 100vw;
+    height: 75vh;
+}
+
+.AddMembers-inner-container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 80vh;
+}
+
+.AddMembers-body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.form-item {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}

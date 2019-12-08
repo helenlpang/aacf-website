@@ -1,0 +1,21 @@
+.church-list ul {
+    padding: 0;
+}
+
+.church-list input {
+    width: 50vw;
+    height: 2rem;
+}
+
+.church-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem
+}
+
+.church-info ul {
+    margin-right: 2rem;
+    
+}

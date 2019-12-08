@@ -1,0 +1,16 @@
+.church-profile {
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.church-profile td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: white;
+}

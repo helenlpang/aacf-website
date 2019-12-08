@@ -1,0 +1,14 @@
+.App-header {
+  background-image: url("/mountain.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: #f8f8ff;
+  padding: 8rem 8rem;
+}
