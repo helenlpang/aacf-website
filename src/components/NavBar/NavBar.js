@@ -25,6 +25,11 @@ class NavBar extends React.Component {
                                 </NavLink>
                             </li>
                             <li>
+                                <NavLink to="/photos">
+                                    Photos
+                                </NavLink>
+                            </li>
+                            <li>
                                 <NavLink to="/addmembers">
                                     Join AACF!
                                 </NavLink>
