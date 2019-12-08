@@ -9,6 +9,7 @@
     height: 80vh;
 }
 
+
 .text{
     text-align: center;
     margin: 0;
@@ -18,4 +19,9 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
     font-size: 500%;
+    font-family: "Simplifica";
 }
+
+/* .text br {
+
+} */
