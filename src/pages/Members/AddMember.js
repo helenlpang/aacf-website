@@ -8,13 +8,21 @@ class AddMember extends React.Component {
         this.firstNameEl = React.createRef();
         this.lastNameEl = React.createRef();
         this.emailEl = React.createRef();
+        this.churchEl = React.createRef();
+        this.yearEl = React.createRef();
+
+
     }
     
     handler = () => {
         const firstName = this.firstNameEl.current.value;
         const lastName = this.lastNameEl.current.value;
         const email = this.emailEl.current.value;
-        console.log(firstName, lastName, email);
+        const church = this.churchEl.current.value;
+        const year = this.yearEl.current.value;
+
+        
+        console.log(firstName, lastName, email, church, year);
 
         const requestBody = {
             query: `
@@ -23,10 +31,16 @@ class AddMember extends React.Component {
                         firstName: "${firstName}"
                         lastName: "${lastName}"
                         email: "${email}"
+                        church: "${church}"
+                        year: "${year}"
+
+
                     }) {
                         firstName
                         lastName
                         email
+                        church
+                        year
                     }
                 }
             `
@@ -51,19 +65,27 @@ class AddMember extends React.Component {
                 <div className="AddMembers-inner-container">
                     <div className="AddMembers-body">
                                     <React.Fragment>
-                                        <h1>Add New Member</h1>
+                                    <h1 style={{ color: 'black' }}>Add new members!</h1>
                                         <form onSubmit={this.handler}>
                                             <div className="form-item">
-                                                <label>First Name</label>
+                                                <label style = {{ color: 'black' }}>First Name</label>
                                                 <input ref={this.firstNameEl} />
                                             </div>
                                             <div className="form-item">
-                                                <label>Last Name</label>
+                                                <label style = {{color: 'black' }}>Last Name</label>
                                                 <input ref={this.lastNameEl} />
                                             </div>
                                             <div className="form-item">
-                                                <label>Email</label>
+                                                <label style = {{ color: 'black' }}>Email</label>
                                                 <input ref={this.emailEl} />
+                                            </div>
+                                            <div className="form-item">
+                                                <label>Church</label>
+                                                <input ref={this.churchEl} />
+                                            </div>
+                                            <div className="form-item">
+                                                <label>Class of</label>
+                                                <input ref={this.yearEl} />
                                             </div>
                                             <button type="submit">Submit</button>
                                         </form>

@@ -13,7 +13,17 @@ const memberSchema = new Schema({
     email: {
         type: String,
         required: true
+    },
+    church: {
+        type: String,
+        required: true
+    },
+    year: {
+        type: String,
+        required: true
     }
+
+    
 });
 
 module.exports = mongoose.model('Member', memberSchema);

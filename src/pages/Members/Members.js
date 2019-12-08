@@ -20,6 +20,8 @@ class Members extends React.Component {
                         firstName
                         lastName
                         email
+                        church
+                        year
                     }
                 }
             `
@@ -45,10 +47,38 @@ class Members extends React.Component {
             <div className="members-outer-container">
                 <div className="members-inner-container">
                     <div className="members-body">
-                        <h1>AACF Members </h1>
+                        <h1>AACF Freshman </h1>
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
+                                    if(member.year == "2023")
+                                    return <Member member={member} />
+                                })}
+                            </tbody>
+                        </table>
+                        <h1>AACF Sophomores </h1>
+                        <table>
+                            <tbody>
+                                {this.state.members.map(member => {
+                                    if(member.year == "2022")
+                                    return <Member member={member} />
+                                })}
+                            </tbody>
+                        </table>
+                        <h1>AACF Juniors </h1>
+                        <table>
+                            <tbody>
+                                {this.state.members.map(member => {
+                                    if(member.year == "2021")
+                                    return <Member member={member} />
+                                })}
+                            </tbody>
+                        </table>
+                        <h1>AACF Seniors </h1>
+                        <table>
+                            <tbody>
+                                {this.state.members.map(member => {
+                                    if(member.year == "2020")
                                     return <Member member={member} />
                                 })}
                             </tbody>

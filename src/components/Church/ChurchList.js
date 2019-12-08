@@ -20,7 +20,7 @@ let churches = [{
 }, {
   id: 3,
   name: 'Symphony',
-  url: <a href="https://www.symphonychurch.com/">Symphony</a>,
+  url: <a href="/symphony">Symphony</a>,
   denomination: 'Non-Denominational',
   address: '971 Commonwealth Avenue, Boston, MA 02215',
   times: '11:00am-12:30pm'

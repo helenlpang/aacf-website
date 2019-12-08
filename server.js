@@ -8,8 +8,7 @@ const { buildSchema } = require('graphql');
 const Member = require('./models/member');
 
 const API_PORT = 5000
-const MONGO_USER = "myungin"
-const MONGO_PASSWORD = "mark4s0wS33ds"
+
 const MONGO_DB = "scheduling_availability"
 
 const app = express();
@@ -26,12 +25,19 @@ app.use('/graphql',
                 firstName: String!
                 lastName: String!
                 email: String!
+                church: String!
+                year: String!
+
             }
 
             input MemberInput {
                 firstName: String!
                 lastName: String!
                 email: String!
+                church: String!
+                year: String!
+
+
             }
 
             type RootQuery {
@@ -65,7 +71,11 @@ app.use('/graphql',
                 const member = new Member({
                     firstName: args.memberInput.firstName,
                     lastName: args.memberInput.lastName,
-                    email: args.memberInput.email
+                    email: args.memberInput.email,
+                    church: args.memberInput.church,
+                    year: args.memberInput.year
+
+
                 });
                 return member.save()
                     .then(res => {

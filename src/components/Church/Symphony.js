@@ -3,7 +3,7 @@ import React from 'react';
 import '../../pages/Members/Members.css';
 import Member from '../../pages/Members/Member';
 
-class Citylife extends React.Component {
+class Symphony extends React.Component {
     state = {
         members: []
     };
@@ -48,12 +48,12 @@ class Citylife extends React.Component {
             <div className="members-outer-container">
                 <div className="members-inner-container">
                     <div className="members-body">
-                        <h1>Citylife Attendees </h1>
+                        <h1>Symphony Attendees </h1>
                         <table>
                             <tbody>
                             
                                 {this.state.members.map(member => {
-                                    if(member.church == "Citylife")
+                                    if(member.church == "Symphony")
                                         return <Member member={member} />
                                 })}
                             </tbody>
@@ -65,4 +65,4 @@ class Citylife extends React.Component {
     }
 }
 
-export default Citylife;
+export default Symphony;
