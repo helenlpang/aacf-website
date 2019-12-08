@@ -65,18 +65,18 @@ class AddMember extends React.Component {
                 <div className="AddMembers-inner-container">
                     <div className="AddMembers-body">
                                     <React.Fragment>
-                                        <h1>Add New Member</h1>
+                                    <h1 style={{ color: 'black' }}>Add new members!</h1>
                                         <form onSubmit={this.handler}>
                                             <div className="form-item">
-                                                <label>First Name</label>
+                                                <label style = {{ color: 'black' }}>First Name</label>
                                                 <input ref={this.firstNameEl} />
                                             </div>
                                             <div className="form-item">
-                                                <label>Last Name</label>
+                                                <label style = {{color: 'black' }}>Last Name</label>
                                                 <input ref={this.lastNameEl} />
                                             </div>
                                             <div className="form-item">
-                                                <label>Email</label>
+                                                <label style = {{ color: 'black' }}>Email</label>
                                                 <input ref={this.emailEl} />
                                             </div>
                                             <div className="form-item">
