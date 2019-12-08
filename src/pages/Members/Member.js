@@ -8,6 +8,10 @@ class Member extends React.Component {
                 <td>{this.props.member.firstName}</td>
                 <td>{this.props.member.lastName}</td>
                 <td>{this.props.member.email}</td>
+                <td>{this.props.member.church}</td>
+                <td>{this.props.member.year}</td>
+
+
             </tr>
         )
     }

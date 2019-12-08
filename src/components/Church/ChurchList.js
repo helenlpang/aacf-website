@@ -7,21 +7,21 @@ import Map from '../Map/Map';
 let churches = [{
   id: 1,
   name: 'Citylife',
-  url:<a href="http://www.citylifeboston.org/">Citylife</a>, 
+  url:<a href="/citylife">Citylife</a>, 
   denomination: 'Presbyterian',
   address: '200 Stuart St, Boston, MA 02116',
   times: '10:30am-12:00pm'
 }, {
   id: 2,
   name: 'Aletheia',
-  url: <a href="https://www.aletheia.org/">Aletheia</a>,
+  url: <a href="/aletheia">Aletheia</a>,
   denomination: 'Non-Denominational',
   address: '820 Massachusetts Ave, Cambridge, MA 02139',
   times: '9:00am-10:30am'
 }, {
   id: 3,
   name: 'Symphony',
-  url: <a href="https://www.symphonychurch.com/">Symphony</a>,
+  url: <a href="/symphony">Symphony</a>,
   denomination: 'Non-Denominational',
   address: '971 Commonwealth Avenue, Boston, MA 02215',
   times: '11:00am-12:30pm'

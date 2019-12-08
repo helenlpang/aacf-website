@@ -8,13 +8,21 @@ class AddMember extends React.Component {
         this.firstNameEl = React.createRef();
         this.lastNameEl = React.createRef();
         this.emailEl = React.createRef();
+        this.churchEl = React.createRef();
+        this.yearEl = React.createRef();
+
+
     }
     
     handler = () => {
         const firstName = this.firstNameEl.current.value;
         const lastName = this.lastNameEl.current.value;
         const email = this.emailEl.current.value;
-        console.log(firstName, lastName, email);
+        const church = this.churchEl.current.value;
+        const year = this.yearEl.current.value;
+
+        
+        console.log(firstName, lastName, email, church, year);
 
         const requestBody = {
             query: `
@@ -23,10 +31,16 @@ class AddMember extends React.Component {
                         firstName: "${firstName}"
                         lastName: "${lastName}"
                         email: "${email}"
+                        church: "${church}"
+                        year: "${year}"
+
+
                     }) {
                         firstName
                         lastName
                         email
+                        church
+                        year
                     }
                 }
             `
@@ -64,6 +78,14 @@ class AddMember extends React.Component {
                                             <div className="form-item">
                                                 <label>Email</label>
                                                 <input ref={this.emailEl} />
+                                            </div>
+                                            <div className="form-item">
+                                                <label>Church</label>
+                                                <input ref={this.churchEl} />
+                                            </div>
+                                            <div className="form-item">
+                                                <label>Class of</label>
+                                                <input ref={this.yearEl} />
                                             </div>
                                             <button type="submit">Submit</button>
                                         </form>

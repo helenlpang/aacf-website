@@ -10,6 +10,9 @@ import ChurchList from './components/Church/ChurchList';
 // import ChurchList from './pages/Churches/Churches'
 import Members from './pages/Members/Members';
 import AddMembers from './pages/Members/AddMember';
+import Citylife from './components/Church/Citylife';
+import Aletheia from './components/Church/Aletheia';
+import Symphony from './components/Church/Symphony';
 
 class App extends React.Component {
   render() {
@@ -23,6 +26,11 @@ class App extends React.Component {
               <Route path="/churches" component={ChurchList} />
               <Route path="/members" component={Members} />
               <Route path="/addmembers" component={AddMembers} />
+              <Route path="/citylife" component={Citylife} />
+              <Route path="/aletheia" component={Aletheia} />
+              <Route path="/symphony" component={Symphony} />
+
+
             </ScrollToTop>
           </Switch>
         </div>
