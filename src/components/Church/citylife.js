@@ -4,7 +4,7 @@ import nl2br from 'react-newline-to-break';
 import '../../pages/Members/Members.css';
 import Member from '../../pages/Members/Member';
 
-class Aletheia extends React.Component {
+class Citylife extends React.Component {
 
     state = {
         members: []
@@ -45,25 +45,24 @@ class Aletheia extends React.Component {
     }
 
     render() {
-        let city = `Aletheia is a non-denominational church 
-        located between MIT and Harvard. Because of this, many undergraduates
-        from both Harvard and MIT go to Aletheia. Led by Pastor Adam
-        Marbury, Aletheia is a fast-growing church with a mission to equip
-        and teach members with the gospel. Aletheia adopts a more contemporary
-        style of worship, and also attracts a diverse membership body. Pastor Adam
-        is known for his applicable and convicting sermons, and the worship band
-        is always prepared with contemporary music styles. If you're looking for
-        a great service at a terrific location, check out Aletheia. \n`;
-        let direct = "\nFrom Harvard Yard:\n\nWalk to Adam's Oaktel near Hong Kong Restaurant and walk along Mass Ave for approximately 1 mile.\n";
-        let web = "aletheia.org\n";
+        let city = `Citylife is a Presbyterian church found a couple minutes away from Park street.
+        With a high view of Scripture, Citylife adheres to a Reformed view of the Bible
+        and the parts of their service are also oriented around Scripture. Citylife is
+        on the traditional side; however they still have many contemporary elements such as 
+        a praise band and modern songs along with hymns. Head Pastor Stephen Um gives
+        sermons and so does Assistant Pastor David Cho. If you're looking for a church deeply
+        rooted in Scripture, be sure to check out Citylife!. \n`;
+        let direct = `\nFrom John Harvard Statue:\n\nWalk to the T station in Harvard Square. 
+        Get off at Park Street stop. Walk straight, past Boloco until you reach the Revere hotel. Go up to the 5th floor.\n`;
+        let web = "citylifeboston.org\n";
         return (
             <div>
                 <h1 style={{textAlign: "left"}}> 
-                    Aletheia 
+                    Citylife 
                 </h1>
                 <p>
                     {nl2br(city)}
-                    Website: <a href="https://www.aletheia.org/">{nl2br(web)}</a>
+                    Website: <a href="http://www.citylifeboston.org/">{nl2br(web)}</a>
                 </p>
                 <h2>
                     Directions
@@ -72,18 +71,18 @@ class Aletheia extends React.Component {
                     {nl2br(direct)}
                 </p>
                 <h3>
-                    Meetup: Outside Hong Kong restuarant 15 minutes before service starts
+                    Meetup: John Harvard Statue at 9:45am. 
                 </h3>
 
                 <div className="members-outer-container">
                 <div className="members-inner-container">
                     <div className="members-body">
-                        <h1>Aletheia Attendees </h1>
+                        <h1>Citylife Attendees </h1>
                         <table>
                             <tbody>
                             
                                 {this.state.members.map(member => {
-                                    if(member.church == "Aletheia")
+                                    if(member.church == "Citylife")
                                         return <Member member={member} />
                                 })}
                             </tbody>
@@ -159,4 +158,4 @@ class Aletheia extends React.Component {
 //     }
 // }
 }
-export default Aletheia;
+export default Citylife;
