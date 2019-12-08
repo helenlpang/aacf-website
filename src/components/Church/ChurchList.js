@@ -9,7 +9,7 @@ let churches = [{
   name: 'Citylife',
   url:<a href="http://www.citylifeboston.org/">Citylife</a>, 
   denomination: 'Presbyterian',
-  address: '10 Milk St #230, Boston, MA 02108',
+  address: '200 Stuart St, Boston, MA 02116',
   times: '10:30am-12:00pm'
 }, {
   id: 2,

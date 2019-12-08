@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Button from 'react-bootstrap/Button';
 
+import { Link } from 'react-router-dom'
 
 class Home extends React.Component {
     render() {
@@ -37,8 +38,12 @@ class Home extends React.Component {
                             retreats throughout the year.
                         </p>
 
+                       
+                        <Link to="/addmembers"> 
+                        <Button variant="light" size="lg" block> Interested? Click here to join AACF!</Button> 
+                        </Link>
                         
-
+                        
                     </div>
                 </div>
             </div>

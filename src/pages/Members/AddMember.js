@@ -1,4 +1,5 @@
 import React from 'react';
+import './AddMembers.css';
 
 class AddMember extends React.Component {
     constructor() {
@@ -46,24 +47,30 @@ class AddMember extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
-                <h1>Add New Member</h1>
-                <form onSubmit={this.handler}>
-                    <div className="form-item">
-                        <label>First Name</label>
-                        <input ref={this.firstNameEl} />
+            <div className="AddMembers-outer-container">
+                <div className="AddMembers-inner-container">
+                    <div className="AddMembers-body">
+                                    <React.Fragment>
+                                        <h1>Add New Member</h1>
+                                        <form onSubmit={this.handler}>
+                                            <div className="form-item">
+                                                <label>First Name</label>
+                                                <input ref={this.firstNameEl} />
+                                            </div>
+                                            <div className="form-item">
+                                                <label>Last Name</label>
+                                                <input ref={this.lastNameEl} />
+                                            </div>
+                                            <div className="form-item">
+                                                <label>Email</label>
+                                                <input ref={this.emailEl} />
+                                            </div>
+                                            <button type="submit">Submit</button>
+                                        </form>
+                        </React.Fragment>
                     </div>
-                    <div className="form-item">
-                        <label>Last Name</label>
-                        <input ref={this.lastNameEl} />
-                    </div>
-                    <div className="form-item">
-                        <label>Email</label>
-                        <input ref={this.emailEl} />
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </React.Fragment>
+                </div>
+             </div>
         )
     }
 }

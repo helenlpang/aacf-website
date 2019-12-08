@@ -1,15 +1,24 @@
-.members-outer-container {
+
+.AddMembers-outer-container {
     width: 100vw;
     height: 200vh;
 }
 
-.members-inner-container {
+.AddMembers-inner-container {
     margin-left: 10vw;
     margin-right: 10vw;
     height: 80vh;
 }
 
-.members-body {
+.AddMembers-body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.form-item {
     margin-left: 10vw;
     margin-right: 10vw;
     display: flex;

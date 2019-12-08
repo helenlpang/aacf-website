@@ -12,7 +12,6 @@ import * as churchData from "../../data/churches.json"
 import mapStyles from "../../mapStyles";
 
 
-import {churches} from '../Church/ChurchList';
 function Map() {
     const [selectedChurch, setSelectedChurch] = useState(null);
   
@@ -64,7 +63,7 @@ function Map() {
   class FinalMap extends React.Component {
     render() {
       return (
-        <div style = {{ width: "71vw", height: "60vh", }}>
+        <div style = {{ width: "83vw", height: "60vh", }}>
           <WrappedMap 
             googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyASigF8g5y-u4pWOqF41qMmiF2gWBQCUVw`}
             loadingElement={<div style={{ height: "100%" }} /> }
