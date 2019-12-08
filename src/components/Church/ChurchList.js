@@ -1,7 +1,6 @@
 import React from 'react';
 import './ChurchList.css';
 import Church from './Church';
-
 import Map from '../Map/Map';
 
 let churches = [{

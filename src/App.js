@@ -7,7 +7,6 @@ import ScrollToTop from './helpers/ScrollToTop';
 
 import Home from './pages/Home/Home';
 import ChurchList from './components/Church/ChurchList';
-// import ChurchList from './pages/Churches/Churches'
 import Members from './pages/Members/Members';
 import AddMembers from './pages/Members/AddMember';
 import Citylife from './components/Church/Citylife';
