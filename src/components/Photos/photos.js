@@ -1,12 +1,25 @@
-import React from 'react';
+import React from "react";
+import { render } from "react-dom";
+import Gallery from "react-photo-gallery";
+import { photos } from "./photos2";
+
 
 class Photos extends React.Component {
 	render() {
 		return (
-            <p>
-                I need to pee
-            </p>
+           
+
+		<div>
+		<Gallery photos={photos} />;
+
+		</div>
+
+		   
+
 		)
 	}
 }
 export default Photos;
+
+
+
