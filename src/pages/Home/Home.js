@@ -14,7 +14,8 @@ class Home extends React.Component {
                 <div className="home-inner-container">
                     <div className='text'>
                     <text> 
-                    Welcome to AACF </text>
+                        Welcome to AACF 
+                    </text>
                     <Link to="/addmembers"> 
                      <Button variant="light" size="lg" block> Interested? Click here to join AACF!</Button> 
                      </Link>      

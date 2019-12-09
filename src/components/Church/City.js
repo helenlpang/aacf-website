@@ -4,8 +4,8 @@ import nl2br from 'react-newline-to-break';
 import '../../pages/Members/Members.css';
 import Member from '../../pages/Members/Member';
 import 'react-bootstrap'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
+
+
 class City extends React.Component {
 
     state = {
