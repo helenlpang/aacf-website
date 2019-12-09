@@ -1,88 +1,102 @@
 export const photos = [
     {
-      src: "aacfpic1.jpg",
-      width: 4,
-      height: 3
+      src: '/photogallery/aacfpic1.jpg',
+      width: 7,
+      height: 5
     },
     {
-      src: "aacfpic2.jpg",
-      width: 1,
-      height: 1
+      src: '/photogallery/aacfpic2.jpg',
+      width: 8,
+      height: 5
     },
     {
-      src: "aacfpic3.jpg",
-      width: 3,
-      height: 4
+      src: '/photogallery/aacfpic3.jpg',
+      width: 7.5,
+      height: 5
     },
     {
-      src: "aacfpic4.jpg",
-      width: 3,
-      height: 4
+      src: '/photogallery/aacfpic4.jpg',
+      width: 8,
+      height: 5
     },
     {
-      src: "aacfpic5.jpg",
-      width: 3,
-      height: 4
+      src: '/photogallery/aacfpic5.jpg',
+      width: 8,
+      height: 5
     },
     {
-      src: "aacfpic6.jpg",
-      width: 4,
-      height: 3
+      src: '/photogallery/aacfpic6.jpg',
+      width: 8,
+      height: 5
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
-      width: 3,
-      height: 4
-    },
-    {
-      src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/u9cG4cuJ6bU/4927x1000",
-      width: 4927,
-      height: 1000
-    },
-    {
-      src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
-      width: 4,
-      height: 3
-    }
+        src: '/photogallery/aacfpic7.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic8.jpg',
+        width: 7.5,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic9.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic10.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic11.jpg',
+        width: 5,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic12.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic13.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic14.jpg',
+        width: 6,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic15.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic16.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic17.jpg',
+        width: 7,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic18.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic19.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic20.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic21.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic22.jpg',
+        width: 8,
+        height: 5
+      },  {
+        src: '/photogallery/aacfpic23.jpg',
+        width: 8,
+        height: 5
+      }
   ];
   
