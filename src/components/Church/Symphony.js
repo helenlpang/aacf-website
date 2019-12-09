@@ -43,8 +43,9 @@ class Symphony extends React.Component {
             console.log(err);
         })
     }
-
-    render() {
+        //symphony information
+        //display is based on the churches.css file    
+        render() {
         let city = `Symphony is a non-denominational church located near
         Boston University. Symphony's members are almost all Asian-American undergraduates from
         schools around Boston (Boston College, Boston University, Tufts, MIT, etc.).
@@ -68,19 +69,15 @@ class Symphony extends React.Component {
                     {nl2br(city)}
                     Website: <a href="https://www.symphonychurch.com/">{nl2br(web)}</a>
                 </p>
-                <h2>
-                    Directions
-                </h2>
+                <h2>Directions</h2>
+                
                 <p>
                     {nl2br(direct)}
                 </p>
                 <h3>
                     Contact Isaiah Kim for ride details. 
                 </h3>
-
-                {/* <div className="members-outer-container">
-                <div className="members-inner-container">
-                    <div className="members-body"> */}
+                <br/>
                         <h1>Symphony Attendees </h1>
                         <table>
                             <tbody>
@@ -98,69 +95,5 @@ class Symphony extends React.Component {
                  
         );
     };
-
-
-
-// class Aletheia extends React.Component {
-//     state = {
-//         members: []
-//     };
-
-//     componentDidMount() {
-//         this.fetchMembers();
-//     }
-
-//     fetchMembers() {
-//         const requestBody = {
-//             query: `
-//                 query {
-//                     members {
-//                         firstName
-//                         lastName
-//                         email
-//                         church
-//                         year
-//                     }
-//                 }
-//             `
-//         }
-
-//         fetch('http://localhost:5000/graphql', {
-//             method: 'POST',
-//             body: JSON.stringify(requestBody),
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             }
-//         }).then(res => {
-//             return res.json()
-//         }).then(resData => {
-//             return this.setState({ members: resData.data.members })
-//         }).catch(err => {
-//             console.log(err);
-//         })
-//     }
-
-//     render() {
-
-//         return (
-//             <div className="members-outer-container">
-//                 <div className="members-inner-container">
-//                     <div className="members-body">
-//                         <h1>Aletheia Attendees </h1>
-//                         <table>
-//                             <tbody>
-                            
-//                                 {this.state.members.map(member => {
-//                                     if(member.church == "Aletheia")
-//                                         return <Member member={member} />
-//                                 })}
-//                             </tbody>
-//                         </table>
-//                     </div>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
 }
 export default Symphony;

@@ -1,3 +1,5 @@
+//we use graphql, a query language, to access our mongodb server
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -9,8 +11,6 @@ const Member = require('./models/member');
 
 const API_PORT = 5000
 
-const MONGO_DB = "scheduling_availability"
-
 const app = express();
 
 app.use(bodyParser.json());
@@ -19,6 +19,7 @@ app.use(cors());
 
 app.use('/graphql',
     graphqlHttp({
+        //sets the schema of data (members, newmembers, mutations, queries)
         schema: buildSchema(`
             type Member {
                 _id: ID!
@@ -29,7 +30,7 @@ app.use('/graphql',
                 year: String!
 
             }
-
+            
             input MemberInput {
                 firstName: String!
                 lastName: String!
@@ -54,6 +55,7 @@ app.use('/graphql',
             }
         `),
         rootValue: {
+            //to access exisitng members
             members: () => {
                 return Member.find()
                     .then(members => {
@@ -67,6 +69,7 @@ app.use('/graphql',
                         throw err;
                     })
             },
+            //to add new members based on input and save the data
             addMember: (args) => {
                 const member = new Member({
                     firstName: args.memberInput.firstName,
@@ -92,6 +95,7 @@ app.use('/graphql',
     })
 );
 
+//connect to mongodb on Josh's account
 mongoose.connect(`mongodb+srv://joshhong0:aacf@cluster0-cp0x1.mongodb.net/test?retryWrites=true&w=majority`)
     .then(() => {
         console.log('Connected to database')

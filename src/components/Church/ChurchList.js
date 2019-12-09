@@ -93,16 +93,20 @@ class ChurchList extends React.Component {
 
   }
 
+  //function that updates search based on user input
   updateSearch(event) {
       this.setState({search: event.target.value});
   }
 
+  //filter the churches based on the typed entry (lower-case version is matched) 
   render() {
     this.filteredChurches = churches.filter(
         (church) => {
             return church.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
         }
     );
+
+    //displays search bar, and table of filtered churches
     return (
       <div className="church-list">
         <h1>Search for nearby churches!</h1>

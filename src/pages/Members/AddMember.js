@@ -2,6 +2,8 @@ import React from 'react';
 import './AddMembers.css';
 
 class AddMember extends React.Component {
+    //add member will ask for firstname, lastname, email, church and year
+    //constructor creates reference for each field
     constructor() {
         super();    
 
@@ -10,11 +12,10 @@ class AddMember extends React.Component {
         this.emailEl = React.createRef();
         this.churchEl = React.createRef();
         this.yearEl = React.createRef();
-
-
     }
     
     handler = () => {
+        //stores the current values submittted
         const firstName = this.firstNameEl.current.value;
         const lastName = this.lastNameEl.current.value;
         const email = this.emailEl.current.value;
@@ -22,8 +23,9 @@ class AddMember extends React.Component {
         const year = this.yearEl.current.value;
 
         
-        console.log(firstName, lastName, email, church, year);
-
+        //query
+        //mutation: format ${variable} 
+        //defines how we can add a member to the database
         const requestBody = {
             query: `
                 mutation {
@@ -46,6 +48,7 @@ class AddMember extends React.Component {
             `
         }
 
+        //access the graphQL server  
         fetch('http://localhost:5000/graphql', {
             method: 'POST',
             body: JSON.stringify(requestBody),
@@ -59,6 +62,9 @@ class AddMember extends React.Component {
         })
     }
 
+    //render the actual add members page
+    //form: asks for first name, last name, email, church, and year
+    //submit button
     render() {
         return (
             <div className="AddMembers-outer-container">

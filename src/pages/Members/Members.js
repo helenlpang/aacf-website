@@ -8,10 +8,12 @@ class Members extends React.Component {
         members: []
     };
 
+    //calls fetchMembers
     componentDidMount() {
         this.fetchMembers();
     }
 
+    //function to access members since it is a database that updates
     fetchMembers() {
         const requestBody = {
             query: `
@@ -51,6 +53,7 @@ class Members extends React.Component {
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
+                                    //only displays queries of freshmen
                                     if(member.year === "2023")
                                     return <Member key={member.email} member={member} />
                                 })}
@@ -60,6 +63,8 @@ class Members extends React.Component {
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
+                                    //only displays queries of sophomores
+
                                     if(member.year === "2022")
                                     return <Member key={member.email} member={member} />
                                 })}
@@ -69,6 +74,7 @@ class Members extends React.Component {
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
+                                    //only displays queries of juniors                                    
                                     if(member.year === "2021")
                                     return <Member key={member.email} member={member} />
                                 })}
@@ -77,7 +83,8 @@ class Members extends React.Component {
                         <h1>AACF Seniors </h1>
                         <table>
                             <tbody>
-                                {this.state.members.map(member => {
+                                {this.state.members.map(member => {                                    //only displays queries of freshmen
+                                    //only displays queries of seniors
                                     if(member.year === "2020")
                                     return <Member key={member.email} member={member} />
                                 })}

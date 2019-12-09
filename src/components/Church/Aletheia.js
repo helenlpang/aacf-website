@@ -14,6 +14,8 @@ class Aletheia extends React.Component {
         this.fetchMembers();
     }
 
+    //query request for the data points for each member 
+
     fetchMembers() {
         const requestBody = {
             query: `
@@ -70,13 +72,11 @@ class Aletheia extends React.Component {
                     Meetup: Outside Hong Kong restuarant 15 minutes before service starts
                 </h3>
 
-                {/* <div className="members-outer-container">
-                <div className="members-inner-container">
-                    <div className="members-body"> */}
+               
                         <h1>Aletheia Attendees </h1>
                         <table>
                             <tbody>
-                            
+                                {/* key mapped if member attends Aletheia */}
                                 {this.state.members.map(member => {
                                     if(member.church === "Aletheia")
                                         return <Member member={member} key={member.email} />
@@ -90,68 +90,5 @@ class Aletheia extends React.Component {
         );
     };
 
-
-
-// class Aletheia extends React.Component {
-//     state = {
-//         members: []
-//     };
-
-//     componentDidMount() {
-//         this.fetchMembers();
-//     }
-
-//     fetchMembers() {
-//         const requestBody = {
-//             query: `
-//                 query {
-//                     members {
-//                         firstName
-//                         lastName
-//                         email
-//                         church
-//                         year
-//                     }
-//                 }
-//             `
-//         }
-
-//         fetch('http://localhost:5000/graphql', {
-//             method: 'POST',
-//             body: JSON.stringify(requestBody),
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             }
-//         }).then(res => {
-//             return res.json()
-//         }).then(resData => {
-//             return this.setState({ members: resData.data.members })
-//         }).catch(err => {
-//             console.log(err);
-//         })
-//     }
-
-//     render() {
-
-//         return (
-//             <div className="members-outer-container">
-//                 <div className="members-inner-container">
-//                     <div className="members-body">
-//                         <h1>Aletheia Attendees </h1>
-//                         <table>
-//                             <tbody>
-                            
-//                                 {this.state.members.map(member => {
-//                                     if(member.church == "Aletheia")
-//                                         return <Member member={member} />
-//                                 })}
-//                             </tbody>
-//                         </table>
-//                     </div>
-//                 </div>
-//             </div>
-//         )
-//     }
-// }
 }
 export default Aletheia;

@@ -1,3 +1,5 @@
+//key/values for photos: url, width, and height
+
 export const photos = [
     {
       src: '/photogallery/aacfpic1.jpg',

@@ -4,8 +4,7 @@ import nl2br from 'react-newline-to-break';
 import '../../pages/Members/Members.css';
 import Member from '../../pages/Members/Member';
 import 'react-bootstrap'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Container from 'react-bootstrap/Container'
+
 class City extends React.Component {
 
     state = {
@@ -46,6 +45,8 @@ class City extends React.Component {
         })
     }
 
+    //citylife information
+    //display is based on the churches.css file
     render() {
         let city = `Citylife is a Presbyterian church found a couple minutes away from Park street.
         With a high view of Scripture, Citylife adheres to a Reformed view of the Bible
@@ -79,10 +80,6 @@ class City extends React.Component {
                 <h3>
                     Meetup: John Harvard Statue at 9:45am. 
                 </h3>
-
-                {/* <div className="members-outer-container">
-                <div className="members-inner-container">
-                    <div className="members-body"> */}
                         <h1>Citylife Attendees </h1>
                         <table>
                             <tbody>

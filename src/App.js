@@ -14,6 +14,7 @@ import Aletheia from './components/Church/Aletheia';
 import Symphony from './components/Church/Symphony';
 import Photos from './components/Photos/photos'
 
+//imports all pages and creates routes to them
 class App extends React.Component {
   render() {
     return (
