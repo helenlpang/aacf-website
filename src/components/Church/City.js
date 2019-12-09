@@ -50,10 +50,7 @@ class City extends React.Component {
         let city = `Citylife is a Presbyterian church found a couple minutes away from Park street.
         With a high view of Scripture, Citylife adheres to a Reformed view of the Bible
         and the parts of their service are also oriented around Scripture. Citylife is
-        on the traditional side; however they still have many contemporary elements such as 
-        a praise band and modern songs along with hymns. Head Pastor Stephen Um gives
-        sermons and so does Assistant Pastor David Cho. If you're looking for a church deeply
-        rooted in Scripture, be sure to check out Citylife!. \n`;
+        on the traditional side; however they still have many contemporary elements such as a praise band and modern songs along with hymns. Head Pastor Stephen Um gives sermons and so does Assistant Pastor David Cho. If you're looking for a church deeply rooted in Scripture, be sure to check out Citylife! \n`;
         let direct = `\nFrom John Harvard Statue:\n\nWalk to the T station in Harvard Square. 
         Get off at Park Street stop. Walk straight, past Boloco until you reach the Revere hotel. Go up to the 5th floor.\n`;
         let web = "citylifeboston.org\n";
