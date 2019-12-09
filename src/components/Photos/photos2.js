@@ -1,33 +1,33 @@
 export const photos = [
     {
-      src: "aacfpic1.jpg",
-      width: 4,
-      height: 3
+      src: '/photogallery/aacfpic1.jpg',
+      width: 7,
+      height: 5
     },
     {
-      src: "aacfpic2.jpg",
-      width: 1,
-      height: 1
+      src: '/photogallery/aacfpic2.jpg',
+      width: 8,
+      height: 5
     },
     {
-      src: "aacfpic3.jpg",
-      width: 3,
-      height: 4
+      src: '/photogallery/aacfpic3.jpg',
+      width: 7.5,
+      height: 5
     },
     {
-      src: "aacfpic4.jpg",
-      width: 3,
-      height: 4
+      src: '/photogallery/aacfpic4.jpg',
+      width: 8,
+      height: 5
     },
     {
-      src: "aacfpic5.jpg",
-      width: 3,
-      height: 4
+      src: '/photogallery/aacfpic5.jpg',
+      width: 8,
+      height: 5
     },
     {
-      src: "aacfpic6.jpg",
-      width: 4,
-      height: 3
+      src: '/photogallery/aacfpic6.jpg',
+      width: 8,
+      height: 5
     },
     {
       src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
