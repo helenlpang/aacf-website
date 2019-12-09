@@ -35,7 +35,7 @@ export const photos = [
         height: 5
       },  {
         src: '/photogallery/aacfpic8.jpg',
-        width: 8,
+        width: 7.5,
         height: 5
       },  {
         src: '/photogallery/aacfpic9.jpg',
