@@ -66,6 +66,8 @@ function Map() {
 //wraps map using withScriptjs
   const WrappedMap = withScriptjs(withGoogleMap(Map));
 
+  //render map with Google API and API Key
+  //key = AIzaSyASigF8g5y-u4pWOqF41qMmiF2gWBQCUVw
   class FinalMap extends React.Component {
     render() {
       return (
