@@ -14,14 +14,14 @@ let churches = [{
   id: 2,
   name: 'Aletheia',
   url: <a href="/aletheia">Aletheia</a>,
-  denomination: 'Non-Denominational',
+  denomination: 'Non-Denomination',
   address: '820 Massachusetts Ave, Cambridge, MA 02139',
   times: '9:00am-10:30am'
 }, {
   id: 3,
   name: 'Symphony',
   url: <a href="/symphony">Symphony</a>,
-  denomination: 'Non-Denominational',
+  denomination: 'Non-Denomination',
   address: '971 Commonwealth Avenue, Boston, MA 02215',
   times: '11:00am-12:30pm'
 }, {
@@ -112,9 +112,11 @@ class ChurchList extends React.Component {
         </input>
         <div className="church-info">
           <ul>
+          <table>
             {this.filteredChurches.map((church)=>{
                 return <Church church={church} key={church.id}/>
             })}
+            </table>
           </ul>
         </div>
         <Map />

@@ -13,11 +13,7 @@ class Home extends React.Component {
             <div className="home-outer-container">
                 <div className="home-inner-container">
                     <div className='text'>
-<<<<<<< HEAD
                     <text> 
-=======
-                    <text style = {{color: 'white'}}> 
->>>>>>> b39d1e12a0f2d5c936b494b1d726c6a5a7f0fec2
                     Welcome to AACF </text>
                     <Link to="/addmembers"> 
                      <Button variant="light" size="lg" block> Interested? Click here to join AACF!</Button> 

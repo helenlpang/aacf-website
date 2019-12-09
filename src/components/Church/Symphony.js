@@ -57,6 +57,9 @@ class Symphony extends React.Component {
         let direct = `\nFrom the Gate:\n\nContact Isaiah Kim for ride details.\n`;
         let web = "symphonychurch.com\n";
         return (
+            <div className="churches-outer-container">
+            <div className="churches-inner-container">
+                <div className="churches-body">
             <div>
                 <h1 style={{textAlign: "left"}}> 
                     Symphony 
@@ -75,23 +78,24 @@ class Symphony extends React.Component {
                     Contact Isaiah Kim for ride details. 
                 </h3>
 
-                <div className="members-outer-container">
+                {/* <div className="members-outer-container">
                 <div className="members-inner-container">
-                    <div className="members-body">
+                    <div className="members-body"> */}
                         <h1>Symphony Attendees </h1>
                         <table>
                             <tbody>
                             
                                 {this.state.members.map(member => {
-                                    if(member.church == "Symphony")
-                                        return <Member member={member} />
+                                    if(member.church === "Symphony")
+                                        return <Member member={member} key={member.email}/>
                                 })}
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            </div>         
+            </div>  
+                 
         );
     };
 

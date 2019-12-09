@@ -9,6 +9,7 @@ import Home from './pages/Home/Home';
 import ChurchList from './components/Church/ChurchList';
 import Members from './pages/Members/Members';
 import AddMembers from './pages/Members/AddMember';
+import City from './components/Church/City';
 import Aletheia from './components/Church/Aletheia';
 import Symphony from './components/Church/Symphony';
 import Photos from './components/Photos/photos'
@@ -25,6 +26,7 @@ class App extends React.Component {
               <Route path="/churches" component={ChurchList} />
               <Route path="/members" component={Members} />
               <Route path="/addmembers" component={AddMembers} />
+              <Route path="/citylife" component={City} />
               <Route path="/aletheia" component={Aletheia} />
               <Route path="/symphony" component={Symphony} />
               <Route path="/photos" component={Photos} />

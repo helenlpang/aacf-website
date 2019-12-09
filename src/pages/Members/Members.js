@@ -51,8 +51,8 @@ class Members extends React.Component {
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
-                                    if(member.year == "2023")
-                                    return <Member member={member} />
+                                    if(member.year === "2023")
+                                    return <Member key={member.email} member={member} />
                                 })}
                             </tbody>
                         </table>
@@ -60,8 +60,8 @@ class Members extends React.Component {
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
-                                    if(member.year == "2022")
-                                    return <Member member={member} />
+                                    if(member.year === "2022")
+                                    return <Member key={member.email} member={member} />
                                 })}
                             </tbody>
                         </table>
@@ -69,8 +69,8 @@ class Members extends React.Component {
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
-                                    if(member.year == "2021")
-                                    return <Member member={member} />
+                                    if(member.year === "2021")
+                                    return <Member key={member.email} member={member} />
                                 })}
                             </tbody>
                         </table>
@@ -78,8 +78,8 @@ class Members extends React.Component {
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
-                                    if(member.year == "2020")
-                                    return <Member member={member} />
+                                    if(member.year === "2020")
+                                    return <Member key={member.email} member={member} />
                                 })}
                             </tbody>
                         </table>
