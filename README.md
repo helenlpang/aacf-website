@@ -1,68 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Our project was created by using Javascript with the React library, through code edited in Visual Studio.
 
-In the project directory, you can run:
+To run our code, open our ZIP file. Go to terminal and cd into the correct folder. Use terminal to execute npm (node packaging manager) arguments such as “npm install” to install all necessary node packages. Run “npm install” and then “npm start” to start localhost on your open port which will likely be 3000. 
 
-### `npm start`
+This should take you to the homepage. Underneath the Welcome message in the center, there is a button that says "Interested...". If you click on this button this should take you to a separate page where you can join the fellowship. At the top, there is a navigation bar. At the top left, there is a logo of HRAACF (which is who the website is for). Clicking on this logo will always bring you back to this homepage. On the right side of the NavBar, the “Churches” tab brings you to a new webpage listing different churches around the Boston area. The “Members” tab takes you to a separate page that lists all the members that registered for AACF through the website. The “Photos” tab brings you to a page with a photo gallery of AACF. The “Join AACF!” tab brings you to the same page as the button underneath the Welcome Page. The “About Us” page goes into more detail about AACF.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The “Churches” tab has a search bar, which helps you filter out churches by name. For example, if you type "h" all the churches with “h” anywhere in its name will show up. Then if you add "hi", all the churches with “hi” will show up. If none of the queries match up to the church names, none of the churches will be displayed. Each church is a separate row with 4 different cells. The first cell is the church name, the second cell is the denomination, the third cell is the address, and the last cell is the service times. Below all the churches is a map with church icons that are over the location of each church. If you click on the church icon, the specific church that it is covering shows up along with the address.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+If you click on the first three church names: Citylife, Aletheia, and Symphony, this should take you to three individual pages with further descriptions. We chose these 3 churches because this is where the AACF members attend church. The other church names link to their respective church’s websites. On the Citylife page, there is a quick description of what Citylife is like. Underneath the description is a link to the Citylife website. Below that are directions to get to Citylife as well as where the members usually meet to leave to go to church. Lastly, there is a table that lists the members of AACF who attend Citylife. Their names, email, church affiliation, and graduating class year is listed. This applies for both the Symphony and Aletheia pages.
 
-### `npm test`
+The members page lists all the members and separates the years by freshmen, sophomores, juniors, and seniors. Each member has a row with their name, email, church affiliation, and graduating year. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The photos page is a collection of a few pictures from this semester of AACF. If you click on any of the photos, they enlarge and you can click to go through the gallery.
 
-### `npm run build`
+On the Join AACF! tab, you can register to be a part of the website as well as the fellowship. Insert your first name, last name, email, church, and your graduating class year. Click on the submit button and your name should be displayed in the members page.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The About Us tab brings you to a page with description about AACF as well as a group picture.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
