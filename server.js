@@ -8,9 +8,6 @@ const { buildSchema } = require('graphql');
 const Member = require('./models/member');
 
 const API_PORT = 5000
-const MONGO_USER = "myungin"
-const MONGO_PASSWORD = "mark4s0wS33ds"
-const MONGO_DB = "scheduling_availability"
 
 const app = express();
 
@@ -82,7 +79,7 @@ app.use('/graphql',
     })
 );
 
-mongoose.connect(`mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@mern-jelo-tutorial-cluster-tbday.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://joshhong0:aacf@cluster0-cp0x1.mongodb.net/test?retryWrites=true&w=majority`)
     .then(() => {
         console.log('Connected to database')
     })
