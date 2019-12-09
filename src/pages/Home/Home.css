@@ -1,6 +1,6 @@
 .home-outer-container {
     width: 100vw;
-    height: 100vh;
+    height: 75h;
 }
 
 .home-inner-container {
@@ -9,22 +9,15 @@
     height: 80vh;
 }
 
-.image {
-    max-height: 40vh;
-    overflow: hidden;
-}
 
-.image img {
-    width: 90vw;
-    max-height: initial;
-}
-
-.home h1 {
-    font-weight: 400;
-    font-size: 2.2rem;
-}
-
-.home p {
-    font-weight: 200;
-    font-size: 1.8rem;
+.text{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 400%;
+    font-family: "Bookman", serif;
 }

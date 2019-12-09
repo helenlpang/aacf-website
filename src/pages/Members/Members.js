@@ -2,17 +2,18 @@ import React from 'react';
 
 import './Members.css';
 import Member from './Member';
-import AddMember from './AddMember';
 
 class Members extends React.Component {
     state = {
         members: []
     };
 
+    //calls fetchMembers
     componentDidMount() {
         this.fetchMembers();
     }
 
+    //function to access members since it is a database that updates
     fetchMembers() {
         const requestBody = {
             query: `
@@ -21,6 +22,8 @@ class Members extends React.Component {
                         firstName
                         lastName
                         email
+                        church
+                        year
                     }
                 }
             `
@@ -46,15 +49,47 @@ class Members extends React.Component {
             <div className="members-outer-container">
                 <div className="members-inner-container">
                     <div className="members-body">
-                        <h1>Members </h1>
+                        <h1>AACF Freshman </h1>
                         <table>
                             <tbody>
                                 {this.state.members.map(member => {
-                                    return <Member member={member} />
+                                    //only displays queries of freshmen
+                                    if(member.year === "2023")
+                                    return <Member key={member.email} member={member} />
                                 })}
                             </tbody>
                         </table>
-                        <AddMember />
+                        <h1>AACF Sophomores </h1>
+                        <table>
+                            <tbody>
+                                {this.state.members.map(member => {
+                                    //only displays queries of sophomores
+
+                                    if(member.year === "2022")
+                                    return <Member key={member.email} member={member} />
+                                })}
+                            </tbody>
+                        </table>
+                        <h1>AACF Juniors </h1>
+                        <table>
+                            <tbody>
+                                {this.state.members.map(member => {
+                                    //only displays queries of juniors                                    
+                                    if(member.year === "2021")
+                                    return <Member key={member.email} member={member} />
+                                })}
+                            </tbody>
+                        </table>
+                        <h1>AACF Seniors </h1>
+                        <table>
+                            <tbody>
+                                {this.state.members.map(member => {                                    //only displays queries of freshmen
+                                    //only displays queries of seniors
+                                    if(member.year === "2020")
+                                    return <Member key={member.email} member={member} />
+                                })}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,12 @@
+/* used navbarfog.png as the image so that the top would be similar to the full background */
 .outer-container {
     position: fixed;
     width: 100vw;
+    background-image: url("/navbarfog.png");
 }
 
 .nav-body {
-    background-color: #282c34;
+    background-color: 'black';
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -12,6 +14,7 @@
     padding: 1rem 4rem;
     font-size: 1rem;
     font-weight: 500;
+    
     border-bottom: 0.01rem solid #ffffff;
 }
 

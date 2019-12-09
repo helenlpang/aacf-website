@@ -1,3 +1,6 @@
+//uses icy blue map style
+//taken from snazzy maps: https://snazzymaps.com/style/7/icy-blue
+
 export default [
     {
         "stylers": [

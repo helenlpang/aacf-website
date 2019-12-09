@@ -1,0 +1,131 @@
+{
+
+
+
+    "type": "churchlist",
+    
+    "properties": [
+      {
+
+        "church": "Citylife",
+        "features": {
+          "id": 1,
+          "name": "Citylife",
+          "address": "200 Stuart St, Boston, MA 02116",
+          "lat": 42.350552,
+          "lng": -71.067574
+        }
+      },
+
+      {
+      
+        "church": "Aletheia",
+        "features": {
+          "id": 2,
+          "name": "Aletheia",
+          "address": "820 Massachausetts Ave, Cambridge, MA 02139",
+          "lat": 42.366779,
+          "lng": -71.106689
+        }
+      },
+
+      {
+      
+        "church": "Symphony",
+        "features": {
+          "id": 3,
+          "name": "Symphony",
+          "address": "971 Commonwealth Avenue, Boston, MA 02215",
+          "lat": 42.352001,
+          "lng": -71.119637
+        }
+      },
+
+      {
+      
+        "church": "St. Paul",
+        "features": {
+          "id": 4,
+          "name": "St. Paul",
+          "address": "29 Mt Auburn St, Cambridge, MA 02138",
+          "lat": 42.370991,
+          "lng": -71.115410
+        }
+      },
+
+      {
+      
+        "church": "Cambridge Community Church Fellowship (CCFC)",
+        "features": {
+          "id": 5,
+          "name": "Cambridge Community Church Fellowship (CCFC)",
+          "address": "234 Franklin St, Cambridge, MA 02139",
+          "lat": 42.363820,
+          "lng": -71.104430
+        }
+      },
+
+      {
+      
+        "church": "Highrock Church",
+        "features": {
+          "id": 6,
+          "name": "Highrock Church",
+          "address": "50 Quincy St, Cambridge, MA 02139",
+          "lat": 42.376460,
+          "lng": -71.113580
+        }
+      },
+
+      {
+      
+        "church": "Park Street Church",
+        "features": {
+          "id": 7,
+          "name": "Park Street Church",
+          "address": "1 Park St, Boston, MA 02108",
+          "lat": 42.356972,
+          "lng": -71.062172
+        }
+      },
+
+      {
+      
+        "church": "Hope Fellowship Church",
+        "features": {
+          "id": 8,
+          "name": "Hope Fellowship Church",
+          "address": "16 Beech St, Cambridge, MA 0214",
+          "lat": 42.390960,
+          "lng": -71.119600
+        }
+      },
+
+      {
+      
+        "church": "Hillsong Church Boston",
+        "features": {
+          "id": 9,
+          "name":"Aletheia",
+          "address": "279 Tremont St, Boston, MA 02116",
+          "lat": 42.349953,
+          "lng": -71.065659
+        }
+      },
+
+      {
+      
+        "church": "Menonnite Congregation of Boston",
+        "features": {
+          "id": 10,
+          "name": "Menonnite Congregation of Boston",
+          "address": "1555 Massachusetts Ave, Cambridge, MA 02138",
+          "lat": 42.377940,
+          "lng": -71.119700
+        }
+      }
+
+
+    ]
+  }
+
