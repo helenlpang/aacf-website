@@ -12,7 +12,8 @@ import AddMembers from './pages/Members/AddMember';
 import City from './components/Church/City';
 import Aletheia from './components/Church/Aletheia';
 import Symphony from './components/Church/Symphony';
-import Photos from './components/Photos/photos'
+import Photos from './components/Photos/photos';
+import About from './components/About/about';
 
 //imports all pages and creates routes to them
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
               <Route path="/aletheia" component={Aletheia} />
               <Route path="/symphony" component={Symphony} />
               <Route path="/photos" component={Photos} />
+              <Route path="/about" component={About} />
             </ScrollToTop>
           </Switch>
         </div>
