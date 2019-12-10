@@ -9,7 +9,7 @@ const { buildSchema } = require('graphql');
 
 const Member = require('./models/member');
 
-const API_PORT = 8081
+const API_PORT = 5000;
 
 const app = express();
 
@@ -103,6 +103,10 @@ mongoose.connect(`mongodb+srv://joshhong0:aacf@cluster0-cp0x1.mongodb.net/test?r
     .catch(err => {
         console.log(err);
     })
+
+app.get('/', (req, res) => {
+    res.send('I love Char');
+});
 
 app.listen(API_PORT, () => console.log(`Listening on port ${API_PORT}`));
 

@@ -1,0 +1,12 @@
+.members-body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-bottom: 30px;
+}
+.members-body h1 {
+    margin-top: 3rem
+
+}
