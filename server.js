@@ -10,7 +10,7 @@ const { buildSchema } = require('graphql');
 
 const Member = require('./models/member');
 
-const API_PORT = 8081;
+const API_PORT = 5000;
 
 const app = express();
 
