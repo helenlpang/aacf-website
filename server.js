@@ -104,9 +104,9 @@ mongoose.connect(`mongodb+srv://joshhong0:aacf@cluster0-cp0x1.mongodb.net/test?r
         console.log(err);
     })
 
-app.get('/', (req, res) => {
-    res.send('I love Char');
-});
+// app.get('/', (req, res) => {
+//     res.send('I love Char');
+// });
 
 app.listen(API_PORT, () => console.log(`Listening on port ${API_PORT}`));
 
