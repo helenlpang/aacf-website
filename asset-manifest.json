@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/aacf-website/static/css/main.8880c4c0.chunk.css",
+    "main.css": "/aacf-website/static/css/main.c4591b9c.chunk.css",
     "main.js": "/aacf-website/static/js/main.2195b5e5.chunk.js",
     "main.js.map": "/aacf-website/static/js/main.2195b5e5.chunk.js.map",
     "runtime-main.js": "/aacf-website/static/js/runtime-main.99d8efb9.js",
@@ -9,17 +9,18 @@
     "static/js/2.8a6e163e.chunk.js": "/aacf-website/static/js/2.8a6e163e.chunk.js",
     "static/js/2.8a6e163e.chunk.js.map": "/aacf-website/static/js/2.8a6e163e.chunk.js.map",
     "index.html": "/aacf-website/index.html",
-    "precache-manifest.bf88e678359f3ca8a57926a568bdd807.js": "/aacf-website/precache-manifest.bf88e678359f3ca8a57926a568bdd807.js",
+    "precache-manifest.9bb3ff095634330704a7455326d2ab1b.js": "/aacf-website/precache-manifest.9bb3ff095634330704a7455326d2ab1b.js",
     "service-worker.js": "/aacf-website/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/aacf-website/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.8880c4c0.chunk.css.map": "/aacf-website/static/css/main.8880c4c0.chunk.css.map",
-    "static/media/hraacf-logo.png": "/aacf-website/static/media/hraacf-logo.49d37d90.png"
+    "static/css/main.c4591b9c.chunk.css.map": "/aacf-website/static/css/main.c4591b9c.chunk.css.map",
+    "static/media/hraacf-logo.png": "/aacf-website/static/media/hraacf-logo.49d37d90.png",
+    "static/media/NavBar.css": "/aacf-website/static/media/navbarfog.791f8801.png"
   },
   "entrypoints": [
     "static/js/runtime-main.99d8efb9.js",
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.8a6e163e.chunk.js",
-    "static/css/main.8880c4c0.chunk.css",
+    "static/css/main.c4591b9c.chunk.css",
     "static/js/main.2195b5e5.chunk.js"
   ]
 }
