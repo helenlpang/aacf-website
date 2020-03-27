@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a039d00e40c1e556788aae094607cc6c",
+    "revision": "2b670bd7165ddb8413aed39b5337d922",
     "url": "/aacf-website/index.html"
   },
   {
-    "revision": "409f082dd392464c22c0",
+    "revision": "fe9a761d84930521d40d",
     "url": "/aacf-website/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "de6989d28b7efa0cb39a",
-    "url": "/aacf-website/static/css/main.a64b734c.chunk.css"
+    "revision": "b6679e2bdc581a4c4a36",
+    "url": "/aacf-website/static/css/main.a1dac8ba.chunk.css"
   },
   {
-    "revision": "409f082dd392464c22c0",
-    "url": "/aacf-website/static/js/2.e7aa89a5.chunk.js"
+    "revision": "fe9a761d84930521d40d",
+    "url": "/aacf-website/static/js/2.82f34997.chunk.js"
   },
   {
-    "revision": "de6989d28b7efa0cb39a",
-    "url": "/aacf-website/static/js/main.839d5b0d.chunk.js"
+    "revision": "b6679e2bdc581a4c4a36",
+    "url": "/aacf-website/static/js/main.6afb671c.chunk.js"
   },
   {
     "revision": "db817f5d23bd2255ef81",
     "url": "/aacf-website/static/js/runtime-main.99d8efb9.js"
+  },
+  {
+    "revision": "dc931c33d9141a0a70ef40ec25fd8a4f",
+    "url": "/aacf-website/static/media/church.dc931c33.png"
   },
   {
     "revision": "49d37d902e39bad7386bbca2bc2c145c",
