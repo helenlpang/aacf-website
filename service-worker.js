@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/aacf-website/precache-manifest.4a2beefcd3ced198ed48af74776184f0.js"
+  "/aacf-website/precache-manifest.b1913696222182ff8da5910c78357769.js"
 );
 
 self.addEventListener('message', (event) => {
