@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c2f8bf7eaf0d10f1a396fc2f11011ea",
+    "revision": "302de50822e9422c303e7f29f78a9cfe",
     "url": "/aacf-website/index.html"
   },
   {
-    "revision": "e124fa611e42f652015b",
+    "revision": "25c2047a690ba7b288f8",
     "url": "/aacf-website/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "3c0d8db79fe39f5122e2",
-    "url": "/aacf-website/static/css/main.04711bdb.chunk.css"
+    "revision": "de480a5346ea67e58acc",
+    "url": "/aacf-website/static/css/main.d4155df8.chunk.css"
   },
   {
-    "revision": "e124fa611e42f652015b",
-    "url": "/aacf-website/static/js/2.ae2dcdc5.chunk.js"
+    "revision": "25c2047a690ba7b288f8",
+    "url": "/aacf-website/static/js/2.5d16a3cc.chunk.js"
   },
   {
-    "revision": "3c0d8db79fe39f5122e2",
-    "url": "/aacf-website/static/js/main.60ccfe95.chunk.js"
+    "revision": "de480a5346ea67e58acc",
+    "url": "/aacf-website/static/js/main.269815b9.chunk.js"
   },
   {
     "revision": "db817f5d23bd2255ef81",
     "url": "/aacf-website/static/js/runtime-main.99d8efb9.js"
+  },
+  {
+    "revision": "bafb2b7f965fafe2dd4d33b22eac770d",
+    "url": "/aacf-website/static/media/aacfpic1.bafb2b7f.jpg"
   },
   {
     "revision": "dc931c33d9141a0a70ef40ec25fd8a4f",
