@@ -1,5 +1,5 @@
 
-Our project is a church finder and membership database for the Harvard-Radcliffe Asian American Christian Fellowship. The application connects students with churches in the Cambridge area, and provides information for HRAACF members. We used the MERN stack to build our site.
+Our project is a church finder and membership database for the Harvard-Radcliffe Asian American Christian Fellowship. The application connects students with churches in the Cambridge area, and provides information for HRAACF members. We used the MERN stack (JavaScript + MongoDB + Express + ReactJS + Node.js) to build our site.
 
 To run our code, open our ZIP file. Go to terminal and cd into the correct folder. Use terminal to execute npm (node packaging manager) arguments such as “npm install” to install all necessary node packages. Run “npm install” and then “npm start” to start localhost on your open port which will likely be 3000. 
 
